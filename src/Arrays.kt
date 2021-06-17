@@ -38,4 +38,23 @@ fun main(){
     mapOfNames.forEach { t, u ->
         println(" "+t+" "+u)
     }
+    //Loops
+    for(name in numArray){
+        println(name)
+    }
+    for(x in 0..10){
+        println(x)//print from 0 to 10
+    }
+    for(x in 0 until 10){
+        //10 is exclusive
+        println(x)
+    }
+    for(x in 0 until 10 step 2){
+        //10 is exclusive
+        println(x)
+    }
+    for(x in 10 downTo 0 step 2){
+        print(x) //10 is inclusive
+    }
+
 }
