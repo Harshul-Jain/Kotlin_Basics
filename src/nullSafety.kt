@@ -15,6 +15,6 @@ Solution1:
 var size:Int=g?.length!! (this will give NullPointerException ) !!->used as NullSafety when you are sure the Value would or should be Null
 but it will stop the Program
 var size:Int?=g?.length
-var size:Int=g?.length ?: 0
+var size:Int=g?.length ?: 0 (?: Elvin Operator)
 
 */

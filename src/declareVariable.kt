@@ -28,4 +28,5 @@ It is a general variable. The value of a variable that is declared using var can
 VAL(Value)
 The object stored using val cannot be changed, it cannot be reassigned, it is just like the final keyword in java. val is immutable. Once assigned the val becomes read-only, however, the properties of a val object could be changed, but the object itself is read-only.*/
     println(a)
+    // MORE IMFORMATION AVAILABLE AT https://kotlinlang.org/docs/basic-syntax.html
 }
