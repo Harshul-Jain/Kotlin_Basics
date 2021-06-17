@@ -1,3 +1,5 @@
+import java.util.function.BiConsumer
+
 val numbers= arrayOf(1,2,3,4,5)
 /*
 it works on vararg
@@ -26,4 +28,14 @@ fun main(){
     println(mapOfNames["Name"])
     hashMapOfNames["Occupation"]="Student"
     println(hashMapOfNames["Occupation"])
+    hashMapOfNames.forEach { t, u -> println(" "+t+" "+u) }
+    mutableListOfNames.forEach {
+        println(it)
+    }
+    nameString.forEach {
+        println(it)
+    }
+    mapOfNames.forEach { t, u ->
+        println(" "+t+" "+u)
+    }
 }
