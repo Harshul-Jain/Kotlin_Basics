@@ -56,5 +56,30 @@ fun main(){
     for(x in 10 downTo 0 step 2){
         print(x) //10 is inclusive
     }
-
+    //Some Special Keywords
+    //as
+    val any:Any="Harshul"
+    val bAny:String=any as String
+    //is
+    if(any is String){
+        any.length
+    }
+    when(any){
+        "Harshul"->{
+            println("First Name")
+        }
+        "Jain"->{
+            println("Last Name")
+        }
+        else->{
+            println("Name")
+        }
+    }
+    //Also return value
+    val x=when(any){
+        "Harshul"->"$any Jain"
+        "Jain"->"Harshul $any"
+        else->"Not a valid name"
+    }
+    println(x)
 }
