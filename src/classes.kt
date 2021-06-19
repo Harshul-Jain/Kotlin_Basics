@@ -30,11 +30,18 @@ class Account{
     var amount:Float=0f
 
     //Member Functions
-    fun insert(ac:Int,n:String,amnt:Float){
+    /*fun insert(ac:Int,n:String,amnt:Float){
         accNo=ac
         name=n
         amount=amnt
+    }*/
+    //this point to the current receiver
+    fun insert(accNo:Int,name:String,amount:Float){
+        this.accNo=accNo
+        this.name=name
+        this.amount=amount
     }
+
 
     fun deposit(money:Float){
         amount+=money
