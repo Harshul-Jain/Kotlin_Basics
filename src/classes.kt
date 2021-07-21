@@ -84,7 +84,7 @@ class Account2( accNo:Int, name:String, amount:Float){
     }
 }
 //Difference between Primary Constructor and Constructor with init block
-//in case of init block i can to manipulation which can not be done in other like
+//in case of init block i can do manipulation which can not be done in other like
 /*
  init {
         this.accNo=accNo
