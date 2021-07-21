@@ -28,10 +28,18 @@ fun dropMultiples(n: Int) {
 //            numList.remove(i)
 //        }
 //    }
-    // correctly
-    for (i in 0 until numList.size) {
-        if (i % n == 0) {
-            numList.remove(i)
+    // OK
+//    for (i in 0 until numList.size) {
+//        if (i % n == 0) {
+//            numList.remove(i)
+//        }
+//    }
+    //Most Correct Way
+    val itr=numList.iterator()
+    while(itr.hasNext()){
+        val i=itr.next()
+        if(i%n==0){
+           itr.remove()
         }
     }
 
