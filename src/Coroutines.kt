@@ -40,6 +40,9 @@ fun main(){
 suspend fun printList(id:String){
     for (i in 0 until 10000){
         if(i%100 ==0){
+            //we have written withContext(Dispatchers.IO) because they make run on different worker thread
+            //if we do not write this then entire process will run on main Thread
+            
             withContext(Dispatchers.IO){
                 println("$id $i")
             }
